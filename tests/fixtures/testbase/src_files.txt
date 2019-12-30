@@ -1,0 +1,1 @@
+﻿CommonModules\ОбщийМодуль1\Ext\Module.bsl
