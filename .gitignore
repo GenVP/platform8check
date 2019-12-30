@@ -1,2 +1,4 @@
 test*.xml
+bdd-*.xml
+tests//fixtures//testbase//src//ConfigDumpInfo.xml
 .vscode/*
