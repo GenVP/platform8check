@@ -1,4 +1,3 @@
 test*.xml
 bdd-*.xml
-.vscode/*
 tests/fixtures/testbase/src/ConfigDumpInfo.xml

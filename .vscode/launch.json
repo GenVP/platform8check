@@ -1,0 +1,41 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Выполнение тестов",
+            "type": "oscript",
+            "request": "launch",
+            "program": "${workspaceRoot}/tasks/test.os",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": null,
+            "debugPort": 2801,
+            "protocol": "internal"
+        },
+        {
+            "name": "Пример 1",
+            "type": "oscript",
+            "request": "launch",
+            "program": "${workspaceRoot}/examples/example1.os",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": null,
+            "debugPort": 2801,
+            "protocol": "internal"
+        },
+        {
+            "name": "Пример 2",
+            "type": "oscript",
+            "request": "launch",
+            "program": "${workspaceRoot}/examples/example2.os",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "runtimeExecutable": null,
+            "debugPort": 2801,
+            "protocol": "internal"
+        }
+    ]
+}
