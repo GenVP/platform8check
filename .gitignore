@@ -1,3 +1,4 @@
 test*.xml
 bdd-*.xml
+*.ospx
 tests/fixtures/testbase/src/ConfigDumpInfo.xml
