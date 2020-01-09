@@ -19,6 +19,7 @@
 	И Я добавляю в файл настроек проверки "ФайлНастроекПроверки" максимальное время ожидания 900
 	И Я добавляю в файл настроек проверки "ФайлНастроекПроверки" ключи проверки "IncorrectReferences,ThinClient,WebClient,Server,ExternalConnection,ExternalConnectionServer,ThickClientManagedApplication,ThickClientServerManagedApplication,ThickClientOrdinaryApplication,ThickClientServerOrdinaryApplication,UnreferenceProcedures,HandlersExistence,EmptyHandlers"
 	И Я добавляю в файл настроек проверки "ФайлНастроекПроверки" файл SonarQube "ФайлРезультата"
+	И Я добавляю в файл настроек проверки "ФайлНастроекПроверки" проект "Test"
 	И Я собираю файл плагина и сохраняю в переменную "ФайлПлагина"
 	И Я выполняю команду gitsync plugins install -f "ФайлПлагина"
 	И Я выполняю команду gitsync plugins enable platform8check
