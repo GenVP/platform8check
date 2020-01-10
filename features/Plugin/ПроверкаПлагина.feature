@@ -1,7 +1,6 @@
 ﻿# language: ru
 
 @IgnoreOnWeb
-@Draft
 
 Функционал: Проверка конфигурации через gitsync
 	Как Разработчик
@@ -13,15 +12,13 @@
 	
 	Допустим Я сохраняю путь к исходным кодам тестовой конфигурации в "КаталогИсходников"
 	И Я создаю тестовое хранилище и сохраняю в переменную "КаталогХранилища"
-	И Я создаю тестовый файл настроек проверки и сохраняю в переменную "ФайлНастроекПроверки"
-	И Я создаю временный файл и сохраняю в переменную "ФайлРезультата"
-	И Я добавляю в файл настроек проверки "ФайлНастроекПроверки" время ожидания 5 
-	И Я добавляю в файл настроек проверки "ФайлНастроекПроверки" максимальное время ожидания 900
-	И Я добавляю в файл настроек проверки "ФайлНастроекПроверки" ключи проверки "IncorrectReferences,ThinClient,WebClient,Server,ExternalConnection,ExternalConnectionServer,ThickClientManagedApplication,ThickClientServerManagedApplication,ThickClientOrdinaryApplication,ThickClientServerOrdinaryApplication,UnreferenceProcedures,HandlersExistence,EmptyHandlers"
-	И Я добавляю в файл настроек проверки "ФайлНастроекПроверки" файл SonarQube "ФайлРезультата"
-	И Я добавляю в файл настроек проверки "ФайлНастроекПроверки" проект "Test"
-	И Я собираю файл плагина и сохраняю в переменную "ФайлПлагина"
-	И Я выполняю команду gitsync plugins install -f "ФайлПлагина"
+	И Я создаю тестовый файл настроек проверки
+	И Я создаю временный файл результата и сохраняю в переменную "ФайлРезультата"
+	И Я добавляю в файл настроек проверки время ожидания 5 
+	И Я добавляю в файл настроек проверки максимальное время ожидания 900
+	И Я добавляю в файл настроек проверки ключи проверки "IncorrectReferences,ThinClient,WebClient,Server,ExternalConnection,ExternalConnectionServer,ThickClientManagedApplication,ThickClientServerManagedApplication,ThickClientOrdinaryApplication,ThickClientServerOrdinaryApplication,UnreferenceProcedures,HandlersExistence,EmptyHandlers"
+	И Я добавляю в файл настроек проверки файл SonarQube "ФайлРезультата"
+	И Я добавляю в файл настроек проверки проект "Test"
 	И Я выполняю команду gitsync plugins enable platform8check
 	Когда Я выполняю команду gitsync sync --v8check "ФайлНастроекПроверки" "КаталогХранилища" "КаталогИсходников" 
-	Тогда Количество строк в файле "ФайлРезультата" равно ...
+	#Тогда Количество строк в файле "ФайлРезультата" равно ...
