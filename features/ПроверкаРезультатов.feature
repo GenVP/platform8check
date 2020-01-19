@@ -18,4 +18,7 @@
 	И Я устанавливаю для проверок максимальное время ожидания 900
 	И Я Добавляю результат проверки "$РезультатПроверки$" с ключами "IncorrectReferences,ThinClient,WebClient,Server,ExternalConnection,ExternalConnectionServer,ThickClientManagedApplication,ThickClientServerManagedApplication,ThickClientOrdinaryApplication,ThickClientServerOrdinaryApplication,UnreferenceProcedures,HandlersExistence,EmptyHandlers"
 	Когда Я сохраняю результат завершенных проверок в переменную "ТаблицаОшибок"
-	Тогда Количество строк в таблице "$ТаблицаОшибок$" равно 18 
+	Тогда Количество строк в таблице "$ТаблицаОшибок$" равно 16 
+	И Я создаю файл результата и сохраняю в переменную "ФайлSonarQube"
+	Когда Я обрабатываю ошибки в таблице "$ТаблицаОшибок$" и сохраняю в файл "$ФайлSonarQube$" для проекта "TEST"
+	Тогда Количество строк в файле "$ФайлSonarQube$" равно 292
