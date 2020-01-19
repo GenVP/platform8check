@@ -1,9 +1,43 @@
 {
-"date": "2020-01-18 05:09:03",
+"date": "2020-01-19 07:36:48",
 "fileinfos": [
 {
-"path": "file:///C:/WINDOWS/TEMP/a02qagdm.eec.tmp/CommonModules/ОбщийМодуль1/Ext/Module.bsl",
+"path": "file:///C:/Repo/Test/src/CommonModules/ОбщийМодуль1/Ext/Module.bsl",
 "diagnostics": [
+{
+"range": {
+"start": {
+"line": 10,
+"character": 1
+},
+"end": {
+"line": 10,
+"character": 10
+}
+},
+"severity": "Error",
+"code": "571 Переменная не определена",
+"source": "TEST",
+"message": "Переменная не определена (НеИзвестнаяПеременная)\nСообщить(<<?>>НеИзвестнаяПеременная); (Проверка: Толстый клиент (обычное приложение))",
+"relatedInformation": null
+},
+{
+"range": {
+"start": {
+"line": 11,
+"character": 1
+},
+"end": {
+"line": 11,
+"character": 23
+}
+},
+"severity": "Error",
+"code": "572 Процедура или функция с указанным именем не определена",
+"source": "TEST",
+"message": "Процедура или функция с указанным именем не определена (НеИзвестныйМетод)\n<<?>>НеИзвестныйМетод(123); (Проверка: Толстый клиент (обычное приложение))",
+"relatedInformation": null
+},
 {
 "range": {
 "start": {
@@ -29,7 +63,7 @@
 },
 "end": {
 "line": 11,
-"character": 24
+"character": 23
 }
 },
 "severity": "Error",
@@ -63,7 +97,7 @@
 },
 "end": {
 "line": 11,
-"character": 24
+"character": 23
 }
 },
 "severity": "Error",
@@ -97,7 +131,7 @@
 },
 "end": {
 "line": 11,
-"character": 24
+"character": 23
 }
 },
 "severity": "Error",
@@ -117,7 +151,7 @@
 "character": 32
 }
 },
-"severity": "Warrning",
+"severity": "Warning",
 "code": "567 Не обнаружено ссылок на процедуру",
 "source": "TEST",
 "message": "Не обнаружено ссылок на процедуру: \"НеИспользуемаяПроцедура\"",
@@ -134,7 +168,7 @@
 "character": 28
 }
 },
-"severity": "Warrning",
+"severity": "Warning",
 "code": "568 Не обнаружено ссылок на функцию",
 "source": "TEST",
 "message": "Не обнаружено ссылок на функцию: \"НеИспользуемаяФункция\"",
@@ -143,7 +177,7 @@
 ]
 },
 {
-"path": "file:///C:/WINDOWS/TEMP/a02qagdm.eec.tmp/CommonModules/ОбщийМодуль2/Ext/Module.bsl",
+"path": "file:///C:/Repo/Test/src/CommonModules/ОбщийМодуль2/Ext/Module.bsl",
 "diagnostics": [
 {
 "range": {
@@ -159,7 +193,41 @@
 "severity": "Error",
 "code": "561 Ошибка платформенной проверки",
 "source": "TEST",
+"message": "Ожидается имя формального параметра\nПроцедура Тест(<<?>> (Проверка: Толстый клиент (обычное приложение))",
+"relatedInformation": null
+},
+{
+"range": {
+"start": {
+"line": 0,
+"character": 0
+},
+"end": {
+"line": 0,
+"character": 15
+}
+},
+"severity": "Error",
+"code": "561 Ошибка платформенной проверки",
+"source": "TEST",
 "message": "Ожидается имя формального параметра\nПроцедура Тест(<<?>> (Проверка: Внешнее соединение)",
+"relatedInformation": null
+},
+{
+"range": {
+"start": {
+"line": 0,
+"character": 0
+},
+"end": {
+"line": 0,
+"character": 15
+}
+},
+"severity": "Error",
+"code": "561 Ошибка платформенной проверки",
+"source": "TEST",
+"message": "Ожидается имя формального параметра\nПроцедура Тест(<<?>> (Проверка толстого клиента (обычное приложение), вариант клиент-сервер)",
 "relatedInformation": null
 },
 {
@@ -199,42 +267,8 @@
 ]
 },
 {
-"path": "file:///C:/WINDOWS/TEMP/a02qagdm.eec.tmp/Catalogs/Справочник1/Forms/ФормаЭлемента/Ext/Form/Module.bsl",
+"path": "file:///C:/Repo/Test/src/Catalogs/Справочник1/Forms/ФормаЭлемента/Ext/Form/Module.bsl",
 "diagnostics": [
-{
-"range": {
-"start": {
-"line": -1,
-"character": -1
-},
-"end": {
-"line": -1,
-"character": null
-}
-},
-"severity": "Warrning",
-"code": "570 Отсутствует обработчик",
-"source": "TEST",
-"message": "Отсутствует обработчик:  Форма \"ПриСозданииНаСервере\"",
-"relatedInformation": null
-},
-{
-"range": {
-"start": {
-"line": -1,
-"character": -1
-},
-"end": {
-"line": -1,
-"character": null
-}
-},
-"severity": "Warrning",
-"code": "570 Отсутствует обработчик",
-"source": "TEST",
-"message": "Отсутствует обработчик:  ТабличнаяЧасть1Реквизит1 \"ТабличнаяЧасть1Реквизит1ПриИзменении\"",
-"relatedInformation": null
-},
 {
 "range": {
 "start": {
@@ -246,7 +280,7 @@
 "character": 20
 }
 },
-"severity": "Warrning",
+"severity": "Warning",
 "code": "573 Пустой обработчик",
 "source": "TEST",
 "message": "Пустой обработчик: \"ПриОткрытии\"",

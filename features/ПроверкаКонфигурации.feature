@@ -21,7 +21,7 @@
 	И Я начинаю проверку с ключами "IncorrectReferences,ThinClient,WebClient,Server,ExternalConnection,ExternalConnectionServer,ThickClientManagedApplication,ThickClientServerManagedApplication,ThickClientOrdinaryApplication,ThickClientServerOrdinaryApplication,UnreferenceProcedures,HandlersExistence,EmptyHandlers"
 	И Я начинаю проверку с ключами "ExtendedModulesCheck,CheckUseModality" 
 	Когда Я сохраняю результат завершенных проверок в переменную "ТаблицаОшибок"
-	Тогда Количество строк в таблице "$ТаблицаОшибок$" равно 18 
+	Тогда Количество строк в таблице "$ТаблицаОшибок$" равно 16 
 
 	Сценарий: Проверка конфигурации в существующей базе для объекта УправлениеКонфигуратором
 	
@@ -37,7 +37,7 @@
 	И Я начинаю проверку с ключами "IncorrectReferences,ThinClient,WebClient,Server,ExternalConnection,ExternalConnectionServer,ThickClientManagedApplication,ThickClientServerManagedApplication,ThickClientOrdinaryApplication,ThickClientServerOrdinaryApplication,UnreferenceProcedures,HandlersExistence,EmptyHandlers"
 	И Я начинаю проверку с ключами "ExtendedModulesCheck,CheckUseModality" 
 	Когда Я сохраняю результат завершенных проверок в переменную "ТаблицаОшибок"
-	Тогда Количество строк в таблице "$ТаблицаОшибок$" равно 18 
+	Тогда Количество строк в таблице "$ТаблицаОшибок$" равно 16 
 
 	Сценарий: Проверка конфигурации в существующей базе с фильтром
 	
